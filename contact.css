@@ -1,0 +1,254 @@
+.section-1 {
+  background: url(./images/contact2.jpg) no-repeat scroll center center / cover;
+  background-attachment: fixed;
+  height: 600px;
+  background-size: cover;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 160vh;
+  grid-gap: 60px;
+  padding: 50px 40px 50px 15px;
+}
+
+.sec2-content {
+  margin: 80px 20px 40px 40px;
+}
+
+hr{
+  height: 4px;
+  background: #a9c588;
+  border: none;
+  width: 50px;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.sec2-content h4 {
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.sec2-content h3 {
+  font-size: 40px;
+  margin-top: -11px;
+}
+
+.diff-color {
+  color: #a9c588;
+}
+
+.sec2-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 30px;
+  margin-top: -15px;
+  font-family: 'Lora', serif;
+  color: #999999;
+}
+
+input.name-phone {
+  width: 60%;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-family: 'Lora', serif;
+  color: #999999;
+}
+
+input.message{
+  width: 60%;
+  height: 130px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  margin-left: 10px;
+  vertical-align: top;
+  text-align: left;
+  font-family: 'Lora', serif;
+  color: #999999;
+}
+.sec2-content button {
+  background: #a9c588;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  margin-left: 10px;
+  padding: 20px 30px;
+  width: 61.5%;
+}
+
+.side-contact {
+  padding: 200px 30px 40px 30px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  background: url(./images/contact.jpg) no-repeat scroll center center / cover;
+  background-size: cover;
+}
+
+
+.form{
+  width:80%;
+  height:480px;
+  background:white;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative
+}
+
+.form h2{
+  margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color:#a9c588;
+  border-bottom:3px solid #a9c588
+}
+
+.form input{
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',
+  sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #a9c588
+}
+
+.form input:focus{
+  border-bottom:2px solid #a9c588
+}
+.form p:before{
+  content:attr(type);
+  display:block;margin:28px 0 0;
+  font-size:14px;
+  color:#a9c588
+}
+
+.form button{
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #a9c588;
+  background:0;
+  color:#a9c588;
+  cursor:pointer;
+  transition:all .3s
+}
+
+.form button:hover{
+  background:#a9c588;
+  color:#fff
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 767px) {
+  .section-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 20px 20px 20px 0px;
+    height: auto;
+  }
+  
+  .side-contact {
+    display: none;
+  }
+
+  .sec2-content {
+    
+  }
+  
+  .sec2-content h4 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .sec2-content h3 {
+    font-size:2.5rem;
+    margin-top: 8px;
+  }
+  
+  .diff-color {
+    color: #a9c588;
+  }
+  
+  .sec2-content p {
+    margin-top: -30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: 'Lora', serif;
+    color: #999999;
+  }
+  
+  .form{
+    width:100%;
+    height:410px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+  }
+
+  .form h2{
+    margin-bottom: 50px;
+  }
+
+  .form input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',
+    sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #a9c588
+  }
+  
+  .form input:focus{
+    border-bottom:2px solid #a9c588
+  }
+  .form p:before{
+    margin-top: 50px;
+    content:attr(type);
+    display:block;margin:28px 0 0;
+    font-size:14px;
+    color:#a9c588
+  }
+  
+  .form button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-size: 12px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #a9c588;
+    background:0;
+    color:#a9c588;
+    cursor:pointer;
+    transition:all .3s
+  }
+  
+}

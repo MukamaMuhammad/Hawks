@@ -1,0 +1,269 @@
+.section-1 {
+  background: url(./images/about.jpg) no-repeat scroll center center / cover;
+  background-attachment: fixed;
+  height: 600px;
+  background-size: cover;
+}
+
+.p1 {
+  width: 52ch;
+}
+
+.section-2-about {
+  height: 130vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.sec2-content {
+  flex: 1;
+  margin: 80px 20px 40px 40px;
+}
+
+.sec2-image {
+  flex: 1;
+  background: url(./images/01.jpg) no-repeat scroll center center / cover;
+  background-size: cover;
+  margin: 80px 20px 40px 40px;
+}
+
+hr{
+  height: 4px;
+  background: #a9c588;
+  border: none;
+  width: 50px;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.sec2-content h4 {
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.sec2-content h3 {
+  font-size: 40px;
+  margin-top: -11px;
+}
+
+.diff-color {
+  color: #a9c588;
+}
+
+.sec2-content p {
+  font-family: 'Lora', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 30px;
+  margin-top: -15px;
+}
+
+ul {
+  list-style-image: url('./images/arrow.svg');
+  list-style-position: inside;
+  padding-left: 0px;
+}
+
+.sec2-content li {
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Lora', sans-serif;
+  list-style-type: none;
+}
+
+.sec2-content button {
+  background: #a9c588;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 20px 30px;
+  transition: 0.5s;
+}
+
+.sec2-content button:hover {
+  background: black;
+  color: white;
+}
+
+.some-image {
+  background: url(./images/bid.jpg) no-repeat scroll center center / cover;
+  background-attachment: fixed;
+  height: 70vh;
+  background-size: cover;
+}
+
+.section-3-about {
+  height: 130vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 80px;
+}
+
+.sec3-content h4 {
+  font-weight: 500;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.sec3-content h3 {
+  font-size: 35px;
+  margin-top: -5px;
+}
+
+.sec3-content li {
+  font-size: 17px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Lora', sans-serif;
+}
+
+.future-card {
+  padding: 50px;
+  border: 1px solid black;
+  height: 270px;
+  width: 280px;
+  padding-bottom: 70px;
+}
+
+.future-card i {
+  font-size: 60px;
+}
+
+.future-card h4 {
+  font-size: 20px;
+}
+
+.future-card p {
+  font-size: 17px;
+  font-family: 'Lora', sans-serif;
+  line-height: 30px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+
+  .section-2-about {
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec2-image {
+    display: none;
+  }
+
+  .some-image {
+    height: 300px;
+  }
+
+  .sec2-content {
+    margin: 40px 12px;
+  }
+
+  .sec2-content h3 {
+    font-size: 32px;
+  }
+
+  .sec2-content p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .sec2-content li {
+    font-size: 14px;
+  }
+
+  .sec2-content button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sec2-image {
+    display: none;
+  }
+
+  .some-image {
+    height: 300px;
+  }
+
+  .sec2-content h3 {
+    font-size: 26px;
+  }
+
+  .sec2-content li {
+    font-size: 14px;
+  }
+
+  .sec2-content button {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}
+
+/*SECTION 3*/
+@media (max-width: 768px) {
+  .section-3-about {
+    grid-template-columns: 1fr;
+    justify-content: center; /* Center horizontally */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    height: auto;
+  }
+}
+
+/* Responsive styles for phones */
+@media (max-width: 480px) {
+  .section-3-about {
+    grid-template-columns: 1fr;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  .sec3-content {
+    width: 80%;
+  }
+  .future-card {
+    padding: 30px;
+    height: auto;
+    width: 80%;
+  }
+
+  .future-card i {
+    font-size: 40px;
+  }
+
+  .future-card h4 {
+    font-size: 20px;
+  }
+
+  .sec3-content h4 {
+    font-size: 14px;
+  }
+
+  .sec3-content h3 {
+    font-size: 26px;
+  }
+
+  .sec3-content li {
+    font-size: 14px;
+  }
+}
+
+
+/*ANIMATIONS*/
